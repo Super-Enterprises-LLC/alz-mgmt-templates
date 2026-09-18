@@ -40,7 +40,7 @@ jobs:
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_wrapper: false
+          terraform_wrapper: true
           terraform_version: ${{ inputs.terraform_cli_version }}
 
       - name: Terraform Init
@@ -117,7 +117,7 @@ jobs:
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_wrapper: false
+          terraform_wrapper: true
           terraform_version: ${{ inputs.terraform_cli_version }}
 
       - name: Terraform Init
